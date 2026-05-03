@@ -8,6 +8,7 @@ declare(strict_types=1);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>F1 — живи резултати</title>
   <link rel="preconnect" href="https://api.openf1.org">
+  <link rel="stylesheet" href="css/footer.css">
   <style>
     :root {
       --bg: #0a0e14;
@@ -185,15 +186,9 @@ declare(strict_types=1);
       border-color: #166534;
       color: #bbf7d0;
     }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    footer a { color: #93c5fd; }
   </style>
 </head>
-<body>
+<body class="has-fixed-footer">
   <div class="wrap">
     <header>
       <h1>Formula 1 <span>Live</span></h1>
@@ -232,12 +227,9 @@ declare(strict_types=1);
         </div>
       </div>
     </div>
-
-    <footer>
-      Данни: <a href="https://openf1.org/" target="_blank" rel="noopener">OpenF1</a> (безплатен достъп до исторически данни; за най-моментното „live“ време виж условията на OpenF1).
-      Опресняване на клиента на всеки ~5 сек.
-    </footer>
   </div>
+
+  <?php include __DIR__ . '/includes/footer.php'; ?>
 
   <script>
     const POLL_MS = 5000;

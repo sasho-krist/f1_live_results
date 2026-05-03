@@ -1,0 +1,133 @@
+/* Фиксиран долен footer — винаги видим над съдържанието */
+body.has-fixed-footer {
+  padding-bottom: 6rem;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(15, 20, 28, 0.97) 0%, #0a0e14 100%);
+  border-top: 1px solid var(--border, #1e2836);
+  padding: 0.65rem 1rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--muted, #8b9aad);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.site-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+  text-align: center;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer__nav a {
+  color: #93c5fd;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-footer__nav a:hover {
+  text-decoration: underline;
+}
+
+.site-footer__copy {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.site-footer__copy a {
+  color: #fde047;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer__copy a:hover {
+  text-decoration: underline;
+}
+
+.site-footer__meta {
+  margin: 0;
+  font-size: 0.72rem;
+  opacity: 0.9;
+}
+
+.site-footer__meta a {
+  color: #93c5fd;
+}
+
+/* Страници с правен текст */
+.legal-page {
+  padding-bottom: 0.5rem;
+}
+
+.legal-page h1 {
+  font-size: 1.35rem;
+  margin-top: 0;
+}
+
+.legal-page .back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.legal-page .back:hover {
+  text-decoration: underline;
+}
+
+.legal-page section {
+  margin-bottom: 1.25rem;
+}
+
+.legal-page h2 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  color: #e8eef5;
+}
+
+.legal-page p,
+.legal-page li {
+  line-height: 1.55;
+  color: #b8c5d6;
+  font-size: 0.9rem;
+}
+
+.legal-page ul {
+  padding-left: 1.25rem;
+}
+
+.legal-page table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.legal-page th,
+.legal-page td {
+  border: 1px solid var(--border, #1e2836);
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+}
+
+.legal-page th {
+  background: #0f141c;
+  color: var(--muted, #8b9aad);
+}
