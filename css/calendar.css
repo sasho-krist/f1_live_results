@@ -1,0 +1,165 @@
+/* F1 календар страница */
+.cal-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border, #1e2836);
+  padding-bottom: 1rem;
+}
+
+.cal-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.cal-header h1 span {
+  color: var(--accent, #e10600);
+}
+
+.cal-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cal-toolbar label {
+  font-size: 0.85rem;
+  color: var(--muted, #8b9aad);
+}
+
+.cal-toolbar select {
+  background: var(--panel, #12181f);
+  color: var(--text, #e8eef5);
+  border: 1px solid var(--border, #1e2836);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.cal-loading,
+.cal-error {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border, #1e2836);
+  background: var(--panel, #12181f);
+  color: var(--muted, #8b9aad);
+}
+
+.cal-error {
+  border-color: #7f1d1d;
+  background: #3f1515;
+  color: #fecaca;
+}
+
+.cal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cal-card {
+  background: var(--panel, #12181f);
+  border: 1px solid var(--border, #1e2836);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cal-card__head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border, #1e2836);
+}
+
+@media (max-width: 640px) {
+  .cal-card__head {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cal-flag {
+  width: 48px;
+  height: 27px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border, #1e2836);
+}
+
+.cal-flag--ph {
+  background: #1e293b;
+}
+
+.cal-card__titles h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.cal-card__titles p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted, #8b9aad);
+}
+
+.cal-card__dates {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .cal-card__dates { text-align: left; }
+}
+
+.cal-card__cancelled {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: #422006;
+  color: #fde68a;
+}
+
+.cal-sessions {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.cal-sessions th,
+.cal-sessions td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border, #1e2836);
+}
+
+.cal-sessions th {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted, #8b9aad);
+  background: #0f141c;
+}
+
+.cal-sessions tr:last-child td {
+  border-bottom: none;
+}
+
+.cal-sessions .sess-cancelled td {
+  opacity: 0.55;
+}
+
+.cal-empty-sessions {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--muted, #8b9aad);
+}

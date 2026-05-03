@@ -48,6 +48,14 @@ declare(strict_types=1);
       letter-spacing: -0.02em;
     }
     h1 span { color: var(--accent); }
+    .top-nav { margin-left: auto; }
+    .top-nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .top-nav a:hover { text-decoration: underline; }
     .meta {
       font-size: 0.875rem;
       color: var(--muted);
@@ -186,12 +194,33 @@ declare(strict_types=1);
       border-color: #166534;
       color: #bbf7d0;
     }
+    .header-brand {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem 1.25rem;
+      flex-wrap: wrap;
+    }
+    .nav-top a {
+      color: #93c5fd;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .nav-top a:hover { text-decoration: underline; }
+    .nav-sep { color: var(--muted); margin: 0 0.1rem; user-select: none; }
   </style>
 </head>
 <body class="has-fixed-footer">
   <div class="wrap">
     <header>
-      <h1>Formula 1 <span>Live</span></h1>
+      <div class="header-brand">
+        <h1>Formula 1 <span>Live</span></h1>
+        <nav class="nav-top" aria-label="Навигация">
+          <a href="calendar.php">Календар</a>
+          <span class="nav-sep" aria-hidden="true">·</span>
+          <a href="standings.php">Класиране</a>
+        </nav>
+      </div>
       <span class="pill" title="Авто опресняване"><span class="dot live" id="statusDot"></span> <span id="statusText">Зареждане…</span></span>
       <span class="meta" id="clock"></span>
     </header>

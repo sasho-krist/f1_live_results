@@ -36,6 +36,16 @@ declare(strict_types=1);
     </section>
 
     <section>
+      <h2>Къде е календарът на сезона?</h2>
+      <p>Страницата <a href="calendar.php">Календар</a> показва уикенди и сесии за избран сезон чрез OpenF1.</p>
+    </section>
+
+    <section>
+      <h2>Къде е генералното класиране?</h2>
+      <p>Страницата <a href="standings.php">Класиране</a> зарежда точките за пилоти и отбори от бета крайните точки на OpenF1 (към последната подходяща състезателна сесия).</p>
+    </section>
+
+    <section>
       <h2>Откъде са данните?</h2>
       <p>От публичния API <a href="https://openf1.org/" target="_blank" rel="noopener">OpenF1</a> (<code>api.openf1.org</code>), през обобщаващ скрипт <code>api/live.php</code>.</p>
     </section>

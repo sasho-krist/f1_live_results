@@ -30,6 +30,14 @@ declare(strict_types=1);
             <td>Начална страница — живо табло с класиране и Race Control.</td>
           </tr>
           <tr>
+            <td><a href="calendar.php">calendar.php</a></td>
+            <td>F1 календар по сезон (уикенди и сесии от OpenF1).</td>
+          </tr>
+          <tr>
+            <td><a href="standings.php">standings.php</a></td>
+            <td>Генерално класиране — пилоти и конструктори (OpenF1 championship).</td>
+          </tr>
+          <tr>
             <td><a href="privacy.php">privacy.php</a></td>
             <td>Политика за поверителност.</td>
           </tr>

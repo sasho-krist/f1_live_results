@@ -12,6 +12,10 @@ $footerBase = $footerBase ?? '';
       <span aria-hidden="true">·</span>
       <a href="<?= htmlspecialchars($footerBase) ?>faq.php">ЧЗВ</a>
       <span aria-hidden="true">·</span>
+      <a href="<?= htmlspecialchars($footerBase) ?>calendar.php">Календар</a>
+      <span aria-hidden="true">·</span>
+      <a href="<?= htmlspecialchars($footerBase) ?>standings.php">Класиране</a>
+      <span aria-hidden="true">·</span>
       <a href="<?= htmlspecialchars($footerBase) ?>sitemap.php">Sitemap</a>
     </nav>
     <p class="site-footer__copy">
