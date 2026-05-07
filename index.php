@@ -219,6 +219,8 @@ declare(strict_types=1);
           <a href="calendar.php">Календар</a>
           <span class="nav-sep" aria-hidden="true">·</span>
           <a href="standings.php">Класиране</a>
+          <span class="nav-sep" aria-hidden="true">·</span>
+          <a href="f2.php">F2 Live</a>
         </nav>
       </div>
       <span class="pill" title="Авто опресняване"><span class="dot live" id="statusDot"></span> <span id="statusText">Зареждане…</span></span>
